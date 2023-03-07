@@ -6,7 +6,7 @@
       "use": "@vercel/static-build"
     },
     {
-      "src": "service/package.json",
+      "src": "service/src",
       "use": "@vercel/node"
     },
     {
@@ -18,7 +18,7 @@
     { "handle": "filesystem" },
     {
       "src": "/api/(.*)",
-      "dest": "service/package.json"
+      "dest": "service/src/index.ts"
     }
   ]
 }
